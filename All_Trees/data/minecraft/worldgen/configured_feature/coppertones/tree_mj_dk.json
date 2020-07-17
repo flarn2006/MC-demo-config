@@ -1,0 +1,43 @@
+{
+    "name": "tree",
+    "config": {
+        "heightmap": "OCEAN_FLOOR",
+        "max_water_depth": 0,
+        "decorators": [],
+        "minimum_size": {
+            "type": "two_layers_feature_size"
+        },
+        "trunk_placer": {
+            "type": "mega_jungle_trunk_placer",
+            "base_height": 16,
+            "height_rand_a": 12,
+            "height_rand_b": 12
+        },
+        "trunk_provider": {
+            "type": "simple_state_provider",
+            "state": {
+                "Name": "minecraft:green_concrete"
+            }
+        },
+        "foliage_placer": {
+            "type": "dark_oak_foliage_placer",
+            "radius": 2,
+            "offset": 0,
+            "height": 4,
+            "trunk_height": {
+                "base": 4,
+                "spread": 4
+            },
+            "crown_height": {
+                "base": 4,
+                "spread": 4
+            }
+        },
+        "leaves_provider": {
+            "type": "simple_state_provider",
+            "state": {
+                "Name": "minecraft:magenta_stained_glass"
+            }
+        }
+    }
+}
